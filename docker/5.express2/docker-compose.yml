@@ -1,0 +1,21 @@
+version: "3.0"
+
+services:
+  myweb1:
+    image: myexpress:0.4
+    ports:
+      - "8000:3000"
+    environment:
+      - APP_COLOR=cyan
+  myweb2:
+    image: myexpress:0.4
+    ports:
+      - "8001:3000"
+    environment:
+      - APP_COLOR=magenta
+  myweb3:
+    image: myexpress:0.4
+    ports:
+      - "8002:3000"
+    environment:
+      - APP_COLOR=yellow
