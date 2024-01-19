@@ -1,0 +1,12 @@
+upstream my-apps {
+	server green:3000;
+	server magenta:3000;
+}
+
+server {
+	listen 8000 default_server;
+
+	location / {
+		proxy_pass http://my-apps/;
+	}
+}
