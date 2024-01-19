@@ -1,6 +1,7 @@
 upstream my-apps {
 	server green:3000;
 	server magenta:3000;
+	server cyan:3000;
 }
 
 server {
